@@ -1,0 +1,38 @@
+toCharTable(string)  --Returns table of @string's chars
+toByteTable(string)  --Returns table of @string's bytes
+fromCharTable(chars)  --Returns string made of chracters in @chars
+fromByteTable(bytes)  --Returns string made of bytes in @bytes
+startsWith(string,Start) --Check if @string starts with @Start
+endsWith(string,End)  --Check if @string ends with @End
+trim(string)  --Trim @string of initial/trailing whitespace
+firstLetterUpper(string)  --Capitilizes first letter of @string
+titleCase(string)  --Changes @string to title case
+isRepetition(string, pat)  --Checks if @string is a repetition of @pat
+isRepetitionWS(string, pat)  --Checks if @string is a repetition of @pat seperated by whitespaces
+urlDecode(string)  --Url decodes @string
+urlEncode(string)  --Url encodes @string
+isEmailAddress(string)  --Checks if @string is a valid email address
+chunk(string, size)  --Splits @string into chunks of length @size
+find(string, match, startIndex)  --Finds @match in @string optionally after @startIndex
+seperate(string, divider)  --Seperates @string on @divider
+jumble(string)  --Jumbles @string
+toBase(string, base)  --Encodes @string in @base
+fromBase(string, base)  --Decodes @string from @base
+toBinary(string)  --Encodes @string in binary
+fromBinary(string)  --Decodes @string from binary
+toOctal(string)  --Encodes @string in octal
+fromOctal(string)  --Decodes @string from octal
+toHex(string)  --Encodes @string in hex
+fromHex(string)  --Decodes @string from hex
+toBase36(string)  --Encodes @string in Base36
+fromBase36(string)  --Decodes @string from Base36
+toBase32(string)  --Encodes @string in Base32
+fromBase32(string)  --Decodes @string from Base32
+toBase64(string)  --Encodes @string in Base64
+fromBase64(string)  --Decodes @string from Base64
+rot13(string)  --Rot13s @string
+rot47(string)  --Rot47s @string
+sha1(string)  --Sha1s @string
+encrypt(string, key)  --Encrypts @string with @key
+decrypt(string, key)  --Decrypts @string with @key
+setRandSeed(seed)  --Sets random seed to @seed

@@ -2,6 +2,7 @@ toCharTable(string)  --Returns table of @string's chars
 toByteTable(string)  --Returns table of @string's bytes
 fromCharTable(chars)  --Returns string made of chracters in @chars
 fromByteTable(bytes)  --Returns string made of bytes in @bytes
+contains(string,find)  --Returns true if @string contains @find
 startsWith(string,Start) --Check if @string starts with @Start
 endsWith(string,End)  --Check if @string ends with @End
 trim(string)  --Trim @string of initial/trailing whitespace

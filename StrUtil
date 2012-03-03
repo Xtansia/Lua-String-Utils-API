@@ -190,6 +190,13 @@ function fromByteTable(bytes)  --Returns string made of bytes in @bytes
 	return string
 end
 
+function contains(string,find)  --Returns true if @string contains @find
+	for n=1, #string-#find+1 do
+		if string:sub(n,n+#find-1) == find then return true end
+	end
+	return false
+end
+
 function startsWith(string,Start) --Check if @string starts with @Start
    return string.sub(string,1,string.len(Start))==Start
 end

@@ -1,39 +1,43 @@
-toCharTable(string)  --Returns table of @string's chars
-toByteTable(string)  --Returns table of @string's bytes
-fromCharTable(chars)  --Returns string made of chracters in @chars
-fromByteTable(bytes)  --Returns string made of bytes in @bytes
-contains(string,find)  --Returns true if @string contains @find
-startsWith(string,Start) --Check if @string starts with @Start
-endsWith(string,End)  --Check if @string ends with @End
-trim(string)  --Trim @string of initial/trailing whitespace
-firstLetterUpper(string)  --Capitilizes first letter of @string
-titleCase(string)  --Changes @string to title case
-isRepetition(string, pat)  --Checks if @string is a repetition of @pat
-isRepetitionWS(string, pat)  --Checks if @string is a repetition of @pat seperated by whitespaces
-urlDecode(string)  --Url decodes @string
-urlEncode(string)  --Url encodes @string
-isEmailAddress(string)  --Checks if @string is a valid email address
-chunk(string, size)  --Splits @string into chunks of length @size
-find(string, match, startIndex)  --Finds @match in @string optionally after @startIndex
-seperate(string, divider)  --Seperates @string on @divider
-jumble(string)  --Jumbles @string
-toBase(string, base)  --Encodes @string in @base
-fromBase(string, base)  --Decodes @string from @base
-toBinary(string)  --Encodes @string in binary
-fromBinary(string)  --Decodes @string from binary
-toOctal(string)  --Encodes @string in octal
-fromOctal(string)  --Decodes @string from octal
-toHex(string)  --Encodes @string in hex
-fromHex(string)  --Decodes @string from hex
-toBase36(string)  --Encodes @string in Base36
-fromBase36(string)  --Decodes @string from Base36
-toBase32(string)  --Encodes @string in Base32
-fromBase32(string)  --Decodes @string from Base32
-toBase64(string)  --Encodes @string in Base64
-fromBase64(string)  --Decodes @string from Base64
-rot13(string)  --Rot13s @string
-rot47(string)  --Rot47s @string
-sha1(string)  --Sha1s @string
-encrypt(string, key)  --Encrypts @string with @key
-decrypt(string, key)  --Decrypts @string with @key
+toCharTable(str)  --Returns table of @str's chars
+toByteTable(str)  --Returns table of @str's bytes
+fromCharTable(chars)  --Returns str made of chracters in @chars
+fromByteTable(bytes)  --Returns str made of bytes in @bytes
+contains(str,find)  --Returns true if @str contains @find
+startsWith(str,Start) --Check if @str starts with @Start
+endsWith(str,End)  --Check if @str ends with @End
+trim(str)  --Trim @str of initial/trailing whitespace
+firstLetterUpper(str)  --Capitilizes first letter of @str
+titleCase(str)  --Changes @str to title case
+isRepetition(str, pat)  --Checks if @str is a repetition of @pat
+isRepetitionWS(str, pat)  --Checks if @str is a repetition of @pat seperated by whitespaces
+urlDecode(str)  --Url decodes @str
+urlEncode(str)  --Url encodes @str
+isEmailAddress(str)  --Checks if @str is a valid email address
+chunk(str, size)  --Splits @str into chunks of length @size
+find(str, match, startIndex)  --Finds @match in @str optionally after @startIndex
+seperate(str, divider)  --Seperates @str on @divider
+replace(str, from, to)  --Replaces @from to @to in @str
+jumble(str)  --Jumbles @str
+toBase(str, base)  --Encodes @str in @base
+fromBase(str, base)  --Decodes @str from @base
+toBinary(str)  --Encodes @str in binary
+fromBinary(str)  --Decodes @str from binary
+toOctal(str)  --Encodes @str in octal
+fromOctal(str)  --Decodes @str from octal
+toHex(str)  --Encodes @str in hex
+fromHex(str)  --Decodes @str from hex
+toBase36(str)  --Encodes @str in Base36
+fromBase36(str)  --Decodes @str from Base36
+toBase32(str)  --Encodes @str in Base32
+fromBase32(str)  --Decodes @str from Base32
+toBase64(str)  --Encodes @str in Base64
+fromBase64(str)  --Decodes @str from Base64
+rot13(str)  --Rot13s @str
+rot47(str)  --Rot47s @str
+SHA1(str) --Returns SHA1 Hash of @str
+CRC32(str) --Returns CRC32 Hash of @str
+FCS16(str) --Returns FCS16 Hash of @str
+FCS32(str) --Returns FCS32 Hash of @str
+encrypt(str, key)  --Encrypts @str with @key
+decrypt(str, key)  --Decrypts @str with @key
 setRandSeed(seed)  --Sets random seed to @seed
